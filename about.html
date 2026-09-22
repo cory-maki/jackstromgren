@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>About Jack Stromgren | Executive Protection Dental Plan Founder | San Jose</title>
+<meta name="description" content="Jack Stromgren, DDS, founded the Executive Protection Dental Plan after twelve years of restorative and implant practice in Willow Glen, San Jose."/>
+<link rel="canonical" href="https://jackstromgren.netlify.app/about.html"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&amp;family=Source+Sans+3:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="assets/style.css"/>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+(function(){
+  const _sb=supabase.createClient('https://aowblircaymwuymcmllh.supabase.co','eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFvd2JsaXJjYXltd3V5bWNtbGxoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTIzMzExMjcsImV4cCI6MjA2NzkwNzEyN30.qS7jxVwu83zEYMvxNo7C_2dtVrSZ6wYIFiNtoN69UkQ');
+  const _cid='Jack Stromgren';
+  async function loadSBLinks(){
+    const[{data:soc},{data:news}]=await Promise.all([
+      _sb.from('social_media').select('*').eq('client_id',_cid),
+      _sb.from('news_links').select('*').eq('client_id',_cid)
+    ]);
+    const render=(ids,data)=>ids.forEach(id=>{
+      const el=document.getElementById(id);
+      if(!el||!data)return;
+      el.innerHTML='';
+      data.forEach(l=>{
+        const a=document.createElement('a');
+        a.href=l.url;a.target='_blank';a.rel='noopener noreferrer';a.title=l.name;
+        a.innerHTML='<img src="'+l.icon+'" alt="'+l.name+'" style="width:30px;height:30px;border-radius:4px"/>';
+        el.appendChild(a);
+      });
+    });
+    render(['sml-soc-about'],soc);
+    render(['sml-news-about'],news);
+  }
+  document.addEventListener('DOMContentLoaded',loadSBLinks);
+})();
+</script>
+<!-- Open Graph -->
+<meta property="og:type" content="profile"/>
+<meta property="og:site_name" content="Jack Stromgren"/>
+<meta property="og:title" content="About Jack Stromgren | Executive Protection Dental Plan Founder | San Jose"/>
+<meta property="og:description" content="Jack Stromgren, DDS, founded the Executive Protection Dental Plan after twelve years of restorative and implant practice in Willow Glen, San Jose."/>
+<meta property="og:image" content="https://jackstromgren.netlify.app/images/hero.jpg"/>
+<meta property="og:url" content="https://jackstromgren.netlify.app/about.html"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://jackstromgren.netlify.app/#person",
+      "name": "Jack Stromgren",
+      "jobTitle": "Dentist",
+      "url": "https://jackstromgren.netlify.app/",
+      "image": "https://jackstromgren.netlify.app/images/hero.jpg",
+      "description": "Jack Stromgren, DDS, is a restorative and implant dentist in Willow Glen, San José, and the originating figure behind the Jack Stromgren Executive Protection Dental Plan, a dental coverage concept built on four protection-world pillars: Advance Work, Rapid Response, The Inner Circle, and Zero Blind Spots.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "San José",
+        "addressRegion": "CA",
+        "addressCountry": "US"
+      },
+      "sameAs": [
+        "https://www.instagram.com/jackstromgren01/",
+        "https://www.threads.com/@jackstromgren01",
+        "https://www.pinterest.com/JackStromgren/",
+        "https://es.quora.com/profile/Jack-Stromgren",
+        "https://www.reddit.com/user/JackStromgren01/",
+        "https://vimeo.com/jackstromgren",
+        "https://soundcloud.com/jackstromgren",
+        "https://www.f6s.com/jack-stromgren",
+        "https://www.behance.net/jackstromgren",
+        "https://dribbble.com/jackstromgren"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://jackstromgren.netlify.app/#website",
+      "url": "https://jackstromgren.netlify.app/",
+      "name": "Jack Stromgren | Executive Protection Dental Plan Founder",
+      "publisher": {
+        "@id": "https://jackstromgren.netlify.app/#person"
+      }
+    },
+    {
+      "@type": "AboutPage",
+      "@id": "https://jackstromgren.netlify.app/about.html#aboutpage",
+      "url": "https://jackstromgren.netlify.app/about.html",
+      "name": "About Jack Stromgren",
+      "isPartOf": {
+        "@id": "https://jackstromgren.netlify.app/#website"
+      },
+      "mainEntity": {
+        "@id": "https://jackstromgren.netlify.app/#person"
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<!-- ══ NAV ═══════════════════════════════════════════════════════ -->
+<nav id="main-nav">
+  <a class="nav-logo" href="/">Jack<span> Stromgren</span></a>
+  <ul class="nav-links">
+    <li><a href="/">Home</a></li>
+    <li><a class="active" href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- ══ PAGE HERO ═════════════════════════════════════════════════ -->
+<div class="pg-hero">
+  <p class="eyebrow" style="color:rgba(255,255,255,.55)">Learn More</p>
+  <h1>Jack Stromgren</h1>
+  <p class="pg-sub">Founder of the Executive Protection Dental Plan, and a restorative and implant dentist in Willow Glen, San José.</p>
+</div>
+
+<!-- ══ PROFILE CARD ══════════════════════════════════════════════ -->
+<div class="pc-wrap">
+  <div class="pc">
+    <div class="pc-ph"><img src="images/hero.jpg" alt="Jack Stromgren"/></div>
+    <div>
+      <div class="pc-nm">Jack Stromgren</div>
+      <div class="pc-rl">Executive Protection Dental Plan Founder</div>
+      <div class="pc-lc">Willow Glen, San José, California</div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ ABOUT SECTIONS + SIDEBAR ══════════════════════════════════ -->
+<div class="am-wrap">
+  <div class="am-inner">
+    <div>
+
+      <div class="csec">
+        <p class="cey">Origin</p>
+        <h2>The Plan Started With a Delay</h2>
+        <p>Jack Stromgren is a restorative and implant dentist in Willow Glen, San José, and the originating figure behind the Jack Stromgren Executive Protection Dental Plan. The plan began with an account he heard from a patient: a close-protection specialist, mid-negotiation, pulled out of the room by a dental emergency. The man’s entire professional discipline was anticipating this class of problem. His dental coverage had no mechanism for it.</p>
+        <p>What Stromgren took from that conversation was not a product idea but a diagnosis. Conventional dental coverage is engineered to contain cost, which is a reasonable objective and a different objective from protecting health. Annual maximums, waiting periods, and frequency limits all make sense as cost-control instruments. None of them was designed to answer the question the specialist was actually asking, which was how quickly someone competent could look at his mouth. The gap between those two objectives is where the emergency lived, and the plan is an attempt to design for that gap rather than around it.</p>
+      </div>
+
+      <div class="csec">
+        <p class="cey">The Framework</p>
+        <h2>Four Operational Pillars</h2>
+        <p>The plan is organized around four pillars borrowed from protection work. Advance Work is the diagnostic layer, the survey that finds a problem before it becomes urgent, and it is covered in detail in <a href="executive-protection-preventive-care.html">how advance work is structured</a>. Rapid Response addresses access rather than reimbursement, which is the subject of <a href="rapid-response-dental-coverage.html">why 24-hour access matters</a>.</p>
+        <p>The Inner Circle is the vetted specialist roster, assembled before a referral is needed, and the reasoning behind the vetting criteria is set out in <a href="inner-circle-specialist-network.html">how the inner circle network works</a>. Zero Blind Spots is the transparency pillar: coverage terms stated plainly enough that a subscriber knows where the boundaries are before reaching one, on the reasoning that a limit discovered at the moment of need has already done its damage. The four are sequential rather than parallel. Each reduces the load on the next, and a failure in the first is what makes the fourth visible. Stromgren also covers the pillars in video form on <a href="https://vimeo.com/jackstromgren" target="_blank" rel="noopener">Jack Stromgren’s Vimeo videos</a>.</p>
+      </div>
+
+      <div class="csec">
+        <p class="cey">Credentials</p>
+        <h2>The Clinical Background Behind the Framework</h2>
+        <p>Stromgren earned his dental degree at the University of California, San Francisco, and completed a general practice residency at Santa Clara Valley Medical Center. He has practiced independently in Willow Glen for more than twelve years. His clinical concentration is restorative and implant dentistry, with a defined secondary focus in oral appliance therapy for obstructive sleep apnea. The residency matters more to the plan than the degree does. Hospital dentistry puts a clinician in front of medically complex patients and after-hours presentations, and it is where the habit of thinking about handoffs and escalation paths was formed.</p>
+        <p>The implant caseload was deliberate and slow. Stromgren spent three years in continuing education before he was willing to present implant dentistry as a service of the practice. The sleep apnea work started narrower still, with one patient for whom CPAP was not sustainable, and grew into a defined service area from there. Oral appliance therapy is a medically recognized alternative to CPAP for patients with obstructive sleep apnea, particularly those who cannot tolerate positive airway pressure, and it requires coordination between the dentist and the sleep physician who makes the diagnosis. That coordination is one of the referral patterns the third pillar was written around. Questions about both areas arrive regularly, and he answers a number of them on <a href="https://es.quora.com/profile/Jack-Stromgren" target="_blank" rel="noopener">Stromgren’s Quora profile</a>.</p>
+      </div>
+
+      <div class="csec">
+        <p class="cey">The Practice</p>
+        <h2>Stromgren Family Dentistry, Lincoln Avenue</h2>
+        <p>Stromgren Family Dentistry has built a substantial patient base among adults with severe dental anxiety. The approach is procedural rather than promotional: every procedure is narrated before it is performed, and appointments run as long as the patient needs rather than as long as the schedule allots. Jack Stromgren treats anxiety as a clinical finding that changes how treatment is delivered, not as a personality trait to be managed around. The practical effect is that a patient who has avoided care for years presents with more accumulated disease and less tolerance for the appointments required to address it, which is a sequencing problem before it is a clinical one.</p>
+        <p>The practice books eleven weeks out. That figure is a consequence of referral volume from a community that has been failed by high-volume dental care, not a scheduling strategy. It is also the operational constraint that made Rapid Response necessary as a pillar, because a book that full cannot absorb emergencies without a deliberate carve-out. The same figure explains why the plan is framed around access rather than around price. A patient who cannot get an appointment is not helped by a favorable fee schedule, and no amount of reimbursement shortens an eleven-week book. Stromgren discusses the approach at more length in <a href="https://soundcloud.com/jackstromgren" target="_blank" rel="noopener">his recorded talks on SoundCloud</a>.</p>
+      </div>
+
+      <div class="csec">
+        <p class="cey">Community</p>
+        <h2>Documented Community Practice in Santa Clara County</h2>
+        <p>Stromgren has run a free dental day every November since 2016, serving sixty to seventy patients at his own cost. He sits on the board of the Willow Glen Free Clinic, an ongoing institutional commitment rather than a one-time contribution. For six years the practice ran a school sealant program on San José’s east side, which ended when external funding changed rather than when interest did. Taken together the three are a record of sustained effort rather than a set of promotional gestures, which is the distinction that matters when the claim being made is about reliability.</p>
+        <p>That record matters to the plan’s framing for a specific reason. Santa Clara County has a large and demographically varied patient population with documented disparities in dental access, and the sealant program addressed pediatric access directly. A coverage concept built on the premise that unaddressed problems become expensive ones is making a public health argument as much as a commercial one. The free dental day makes the same point at small scale every November: sixty to seventy people carrying untreated disease, most of it cheaper to have caught earlier. Stromgren keeps practice and community materials in <a href="https://www.pinterest.com/JackStromgren/" target="_blank" rel="noopener">his Pinterest collections</a>.</p>
+      </div>
+
+    </div>
+
+    <aside class="sidebar-facts">
+      <div class="sb-box">
+        <div class="sb-title">Quick Facts</div>
+        <div class="fr"><span class="fl">Education</span><span class="fv">Doctor of Dental Surgery, UCSF</span></div>
+        <div class="fr"><span class="fl">Residency</span><span class="fv">Santa Clara Valley Medical Center</span></div>
+        <div class="fr"><span class="fl">Practice</span><span class="fv">Stromgren Family Dentistry, Willow Glen</span></div>
+        <div class="fr"><span class="fl">Years Independent</span><span class="fv">12+</span></div>
+        <div class="fr"><span class="fl">Clinical Focus</span><span class="fv">Restorative and implant dentistry</span></div>
+        <div class="fr"><span class="fl">Insurance Concept</span><span class="fv">Jack Stromgren Executive Protection Dental Plan</span></div>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<!-- ══ SOCIAL + PRESS ACCORDION ══════════════════════════════════ -->
+<div class="acc-section" style="background:var(--off)">
+  <div class="acc-wrap">
+    <button class="acc-btn" onclick="tog(this,'s-about')">Follow Jack Stromgren on Social Media <span class="chevron">&#8964;</span></button>
+    <div class="acc-body" id="s-about"><div id="sml-soc-about" class="social-media-list"></div></div>
+    <button class="acc-btn" onclick="tog(this,'n-about')">Jack Stromgren in the Press <span class="chevron">&#8964;</span></button>
+    <div class="acc-body" id="n-about"><div id="sml-news-about" class="social-media-list"></div></div>
+  </div>
+</div>
+
+<footer>
+  <p>&copy; 2026 Jack Stromgren. All rights reserved. &nbsp;|&nbsp; <a href="privacy.html">Privacy Policy</a></p>
+</footer>
+
+<script>
+function tog(btn,id){
+  const c=document.getElementById(id),open=c.classList.contains('open');
+  document.querySelectorAll('.acc-body').forEach(e=>e.classList.remove('open'));
+  document.querySelectorAll('.acc-btn').forEach(e=>e.classList.remove('open'));
+  if(!open){c.classList.add('open');btn.classList.add('open');}
+}
+</script>
+</body>
+</html>
