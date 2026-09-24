@@ -1,6 +1,6 @@
 # Jack Stromgren
 
-Built site for Jack Stromgren (Executive Protection Dental Plan Founder).
+Built site for Jack Stromgren, DDS (restorative and implant dentist, Willow Glen, San Jose).
 
 Deployment target: https://jackstromgren.netlify.app
 
@@ -14,9 +14,9 @@ this folder to the web root.
 ├── about.html
 ├── contact.html
 ├── privacy.html
-├── executive-protection-preventive-care.html
-├── rapid-response-dental-coverage.html
-├── inner-circle-specialist-network.html
+├── dental-anxiety-clinical-issue.html
+├── oral-appliance-therapy-sleep-apnea.html
+├── executive-protection-dental-plan-pillars.html
 ├── sitemap.xml
 ├── robots.txt
 ├── assets/
@@ -25,7 +25,7 @@ this folder to the web root.
 ```
 
 All pages are flat .html files at the root. Internal links use relative
-paths like `about.html` and `smart-city-illusion.html`.
+paths like `about.html` and `dental-anxiety-clinical-issue.html`.
 
 ## Why .html in URLs
 
